@@ -29,13 +29,14 @@ def main():
             st.image("janken_choki.png")
         elif cpu_hand == "グー":
             st.image("janken_gu.png")
-        else cpu_hand == "パー":
+        else:
         　　 st.image("janken_pa.png")
         st.write(f"結果:{result}")
 
 if __name__ == "__main__":
 
     main()
+
 
 
 
