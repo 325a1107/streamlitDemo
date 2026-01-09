@@ -25,11 +25,17 @@ def main():
     if st.button("じゃんけんポン！"):
         cpu_hand, result = jyanken(player_hand)
         st.write(f"CPU:{cpu_hand}")
-        st.image("janken_choki.png")
+        if cpu_hand == "チョキ":
+            st.image("janken_choki.png")
+        elif cpu_hand == "グー":
+            st.image("janken_gu.png")
+        else cpu_hand == "パー":
+        　　 st.image("janken_pa.png")
         st.write(f"結果:{result}")
 
 if __name__ == "__main__":
 
     main()
+
 
 
